@@ -1,0 +1,15 @@
+# Ignore Git and Terraform state
+.git
+.gitignore
+.terraform
+*.tfstate
+*.tfstate.*
+
+# Ignore Python virtual environment and cache
+venv
+.venv
+__pycache__
+*.pyc
+
+# Ignore IDE files
+.vscode
