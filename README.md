@@ -30,8 +30,8 @@ A full-stack, cloud-native application designed to monitor the health of an AWS 
 
 ```
 .
-├─┬─ .github/workflows/ # GitHub Actions CI/CD pipeline
-│ └── docker-build.yml
+├── .github/workflows/ # GitHub Actions CI/CD pipeline
+│   └── docker-build.yml
 ├── .gitignore
 ├── .dockerignore
 ├── Dockerfile # Recipe for building the application container
@@ -67,7 +67,8 @@ terraform init
 3. Apply the Terraform plan to build the AWS resources. Confirm with `yes`.
 ```bash
 terraform apply
-```4. Note the `instance_id` from the Terraform output. You will need to paste this ID into the `INSTANCE_ID` variable at the top of the `core_logic.py` file.
+```
+4. Note the `instance_id` from the Terraform output. You will need to paste this ID into the `INSTANCE_ID` variable at the top of the `core_logic.py` file.
 
 ### Step 2: Run the Application (Two Options)
 
@@ -77,7 +78,8 @@ terraform apply
 ```bash
 python -m venv venv
 .\venv\Scripts\Activate.ps1
-```2. Install the required dependencies:
+```
+2. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
